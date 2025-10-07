@@ -4,7 +4,9 @@
   font-family: "Inter", sans-serif;
 
 }
-
+.bg{
+  background-color: #F5F5F5
+}
 @import "tailwindcss";
  @plugin "daisyui";
  @plugin "daisyui" {

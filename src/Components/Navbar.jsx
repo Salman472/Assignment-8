@@ -41,7 +41,7 @@ const Navbar = () => {
           </div>
           <div className="flex items-center gap-3">
             <img className="h-10 w-10" src={LogoImg} alt="" />
-            <Link to='/' className="font-bold  text-xl text-li bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent  ">CRIEATIVE APPS.IO</Link>
+            <Link to='/' className="font-bold  text-xl text-li bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent  ">CREATIVE APPS.IO</Link>
           </div>
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -58,7 +58,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <button className="btn py-3"><img className="h-8 w-8" src="https://i.ibb.co.com/F4dM6B7K/Github-desktop-logo-symbol-svg.png" alt="" /> Contribute</button>
+          <button className="btn py-3 bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white"><img className="h-8 w-8" src="https://i.ibb.co.com/F4dM6B7K/Github-desktop-logo-symbol-svg.png" alt="" /> Contribute</button>
         </div>
       </div>
     </div>
