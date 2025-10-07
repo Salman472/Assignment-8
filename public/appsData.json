@@ -1,0 +1,362 @@
+[
+  {
+    "image": "https://i.ibb.co.com/M5MfRRVV/Icon-256-2x.png",
+    "title": "ChatMate",
+    "companyName": "OpenWave Labs",
+    "id": 1,
+    "description": "ChatMate is a conversational AI companion that helps you talk, think, and create. Whether you need help brainstorming, writing, learning, or just chatting, ChatMate adapts to your style and supports you. Behind the scenes, it uses advanced natural language processing and machine learning to interpret your intent, suggest relevant ideas, and generate responses in a conversational voice. The interface is clean: start a new chat, browse previous threads, pin favorites, and categorize conversations. Use templates for email writing, journaling, coding, or learning new topics. Upload documents or images and ask ChatMate to summarize or explain them. Over time, ChatMate will learn your preferences — how long you like responses, your favored tone (casual, formal, technical), and frequently discussed topics. It also includes translation, grammar correction, summarization, and idea generation tools. The mobile app syncs with your account, so you can pick up conversations seamlessly between phone, tablet, and web. Offline caching lets you access recent chats when you don’t have stable connectivity. The developers regularly issue updates that improve the AI’s accuracy, add support for more languages, and enhance safety and filtering. Many people use ChatMate as a thinking partner, writing assistant, learning tool, or productivity booster. It’s not just a chat app — it’s a flexible space where conversation, knowledge, and creativity meet.",
+    "size": 90,
+    "reviews": 145000,
+    "ratingAvg": 4.8,
+    "downloads": 3500000,
+    "ratings": [
+      { "name": "1 star", "count": 900 },
+      { "name": "2 star", "count": 1200 },
+      { "name": "3 star", "count": 5100 },
+      { "name": "4 star", "count": 48000 },
+      { "name": "5 star", "count": 90000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/KxrVD21c/images.jpg",
+    "title": "PhotoSpark",
+    "companyName": "Lumiere Studios",
+    "id": 2,
+    "description": "PhotoSpark is a powerful mobile photo editor designed for both enthusiasts and professionals. With an intuitive interface, PhotoSpark offers a wide range of tools: exposure and contrast adjustments, curves, color grading, selective brushing, healing, layers, textures, and blending modes. You can apply filters or create your own style presets. The app supports raw file import, HDR merges, and batch exporting. It also offers tools for retouching portraits: skin smoothing, blemish removal, color correction, and dodge & burn. PhotoSpark includes built-in tutorials and “one-tap edits” for quick enhancements. The app is optimized for mobile, with gestures for zoom, rotate, brush size, and mask editing. Export formats include JPEG, PNG, and TIFF; you can also share directly to social media or cloud storage. A history panel allows you to revert or reapply changes. Over time, the app learns your editing preferences and suggests presets. The team behind PhotoSpark continuously updates with new filters, AI-assisted edits, and compatibility with the latest camera models. Many users rely on it as their go-to mobile darkroom for creating polished, professional images on the go.",
+    "size": 120,
+    "reviews": 82000,
+    "ratingAvg": 4.7,
+    "downloads": 1200000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 3000 },
+      { "name": "4 star", "count": 22000 },
+      { "name": "5 star", "count": 56000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/N6ykrLPk/unnamed.jpg",
+    "title": "FitPulse",
+    "companyName": "HealthSync Inc.",
+    "id": 3,
+    "description": "FitPulse is your personal fitness companion that tracks workouts, health metrics, goals, and progress. It supports running, cycling, strength training, yoga, and many other activity types. You can set weekly goals and milestones. FitPulse connects with wearable devices and health sensors to pull heart rate, steps, calories, sleep, and recovery data. The app offers guided workouts, plans created by expert trainers, and audio coaching cues. You’ll see your performance trends on charts: pace, distance, elevation, body metrics. The app also includes nutrition tracking, hydration reminders, and recovery tips. Smart algorithms suggest rest days, optimal workout times, and adjustments depending on fatigue. The community section lets you share achievements, join challenges, or compete with friends. You can export your data, sync with health platforms, and get insights. Because the app personalizes itself, FitPulse becomes a coach that learns your routine, adapts to your progress, and encourages you with nudges and reminders. Many users rely on it to stay motivated, measure real progress, and keep fitness sustainable.",
+    "size": 85,
+    "reviews": 64000,
+    "ratingAvg": 4.6,
+    "downloads": 900000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 2500 },
+      { "name": "4 star", "count": 16000 },
+      { "name": "5 star", "count": 44600 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/p6b4HCYp/images-1.jpg",
+    "title": "NoteFlow",
+    "companyName": "StreamMind Labs",
+    "id": 4,
+    "description": "NoteFlow is a versatile note-taking and knowledge management app designed to let ideas flow seamlessly. Capture quick notes, long essays, research documents, sketches, and voice memos. Organize with tags, notebooks, links, and graph views. The editor supports markdown, rich text, embedding media, tables, diagrams, and code snippets. You can link notes like a wiki, build personal knowledge networks, and visualize connections. Built-in search, backlinks, and auto-suggestions help you find content faster. The app supports syncing across devices, offline editing, and version history. It also includes templates and smart suggestions (e.g. to-do lists, meeting notes). Over time, NoteFlow learns keywords and structure, making content suggestions or auto-tagging. You can export to plain text, markdown, PDF, or HTML. Many users adopt NoteFlow as their second brain — to collect, connect, and retrieve knowledge easily.",
+    "size": 75,
+    "reviews": 55000,
+    "ratingAvg": 4.8,
+    "downloads": 800000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 15000 },
+      { "name": "5 star", "count": 38500 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/Df5d5GLK/unnamed.webp",
+    "title": "MapQuestor",
+    "companyName": "GeoInnovate",
+    "id": 5,
+    "description": "MapQuestor is a comprehensive navigation and map app that offers turn-by-turn directions, real time traffic updates, public transit routes, walking and cycling paths, offline maps, and local discovery. It shows nearby points of interest (restaurants, gas stations, landmarks), with reviews, photos, hours, and directions. The app offers customizable route preferences (avoid tolls, highways, scenic routes), alternative paths, and rerouting if you deviate. Offline mode lets you download map regions so navigation works without connectivity. MapQuestor also includes a “Live View” augmented reality walking navigation overlay, 3D building views, and integrated place sharing with friends. The app syncs across devices, stores favorites, recent destinations, and lets you create lists of places to visit. The app’s intelligent engine accounts for traffic, construction, and live incidents to optimize routes. Many users rely on MapQuestor daily to explore, commute, or travel smarter with confidence.",
+    "size": 110,
+    "reviews": 98000,
+    "ratingAvg": 4.7,
+    "downloads": 2200000,
+    "ratings": [
+      { "name": "1 star", "count": 800 },
+      { "name": "2 star", "count": 1200 },
+      { "name": "3 star", "count": 4500 },
+      { "name": "4 star", "count": 33000 },
+      { "name": "5 star", "count": 88000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/FqqSMBw7/images.png",
+    "title": "StreamWave",
+    "companyName": "AudioPulse Ltd.",
+    "id": 6,
+    "description": "StreamWave is a music and podcast streaming platform that offers millions of tracks, curated playlists, personalized radio stations, podcasts, and more. You can explore by genre, mood, new releases, trending, or based on your listening habits. The app offers offline downloads, cross-device syncing (so your playback continues across phone, tablet, web), and analytics on your listening patterns. It also includes recommendations powered by AI — suggesting new songs or podcasts tailored to your tastes. The interface is sleek: a bottom nav bar with Home, Search, Library, and Now Playing. The Now Playing view shows album art, playback controls, queue, lyrics (when available), and related suggestions. Users can follow friends, share playlists, and see what others are listening to (privacy controlled). StreamWave adds social features like collaborative playlists, listening parties, and podcast commenting. They also support high-fidelity audio, spatial audio, and podcast episodes with variable speed. Updates often bring new features like AI song remixes, podcast discovery tools, and integrations with smart speakers and cars.",
+    "size": 95,
+    "reviews": 78000,
+    "ratingAvg": 4.6,
+    "downloads": 1400000,
+    "ratings": [
+      { "name": "1 star", "count": 900 },
+      { "name": "2 star", "count": 1400 },
+      { "name": "3 star", "count": 6000 },
+      { "name": "4 star", "count": 27000 },
+      { "name": "5 star", "count": 45000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/4n1sqB0f/images-2.jpg",
+    "title": "TaskMaster",
+    "companyName": "Efficiently Inc.",
+    "id": 7,
+    "description": "TaskMaster is a powerful task and project management app built for productivity. You can create to-do lists, subtasks, deadlines, priorities, reminders, and categorize by tags or projects. Each task can include notes, attachments, checklists, dependencies, and comments. Switch between list, board (Kanban), and calendar views. TaskMaster supports team collaboration: assign tasks, set permissions, and comment in task threads. Notifications and reminders help you stay on track. The app syncs across devices, with offline support and auto sync when back online. A planner view gives you a daily/weekly agenda, and AI suggestions help you reschedule tasks or avoid conflicts. Analytics show your productivity trends, completed tasks, time used, and overdue patterns. Users often adopt TaskMaster for personal planning, school assignments, or team projects. It’s flexible and scalable from simple to-do lists to full project workflows.",
+    "size": 50,
+    "reviews": 61000,
+    "ratingAvg": 4.7,
+    "downloads": 900000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 3200 },
+      { "name": "4 star", "count": 20000 },
+      { "name": "5 star", "count": 35000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/Z1N6SyPD/1200x630wa.png",
+    "title": "WeatherEye",
+    "companyName": "ClimaTech Co.",
+    "id": 8,
+    "description": "WeatherEye is a modern weather app offering accurate forecasts, radar maps, severe weather alerts, air quality data, and interactive visualizations. Choose hourly, daily, or weekly forecasts with precipitation, humidity, wind speed, UV index, and temperature trends. The app features interactive radar and satellite layers you can pan and zoom. Alerts notify you of storms, heat waves, or hazardous conditions. Widgets let you place live weather snapshots on your home screen. WeatherEye also provides long-range predictions and historical weather comparisons. The design is clean and visual: animations illustrate weather changes, background gradients reflect sky color, and icons adapt to conditions. You can save favorite locations, sync across devices, and customize notification preferences. Advanced users appreciate features like precipitation probability graphs, weather maps overlays (radar, clouds, wind), and integration with smart home devices (thermostats, lights). Many rely on WeatherEye daily for planning commutes, travel, and outdoor activities.",
+    "size": 65,
+    "reviews": 48000,
+    "ratingAvg": 4.5,
+    "downloads": 700000,
+    "ratings": [
+      { "name": "1 star", "count": 600 },
+      { "name": "2 star", "count": 900 },
+      { "name": "3 star", "count": 4200 },
+      { "name": "4 star", "count": 16000 },
+      { "name": "5 star", "count": 27000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/WvyqwkTs/News-Flash-app-icon-svg.png",
+    "title": "NewsFlash",
+    "companyName": "Pulse Media",
+    "id": 9,
+    "description": "NewsFlash is a news aggregator app that curates headlines, articles, videos, and trending topics from multiple sources around the world. You can customize your feed by topics, regions, publishers, or moods (e.g. “Tech,” “Health,” “Business,” “Entertainment”). The app offers both quick summaries and full articles. It also provides push notifications for breaking news and trending stories. You can save articles, share them, or read offline. A “Daily Brief” gives you a concise digest every morning. NewsFlash includes multimedia: embedded videos, podcasts, and infographics. The app’s algorithm learns your reading preferences and shows you more of what you care about. For balanced content, you can enable “Diverse Sources” mode to ensure varied perspectives. The UI is clean and text-readability optimized (dark mode, adjustable font sizes). Many use NewsFlash as a daily journal of world events — reading a few minutes each morning and browsing deep dives when interested.",
+    "size": 80,
+    "reviews": 54000,
+    "ratingAvg": 4.4,
+    "downloads": 800000,
+    "ratings": [
+      { "name": "1 star", "count": 700 },
+      { "name": "2 star", "count": 1100 },
+      { "name": "3 star", "count": 4000 },
+      { "name": "4 star", "count": 18000 },
+      { "name": "5 star", "count": 29000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/N2N7zgz6/1200x630wa-1.png",
+    "title": "TranslateGo",
+    "companyName": "LinguaTech",
+    "id": 10,
+    "description": "TranslateGo is a multilingual translation and language assistant app. You can type, speak, or take a photo of text, and TranslateGo will translate it into your target language. It supports over 100 languages, including lesser-known ones. The app offers real-time voice translation for conversations, text translation with contextual corrections, offline language packs, and camera-based OCR translation. It also helps with phrasebooks, pronunciation training, and language learning practice. You can save favorite phrases, create custom dictionaries, and get usage examples. The app provides context-aware translation (inferring idioms or slang) and alternate suggestions. For travelers, it includes features like offline maps with translated names, companion phrase flashcards, and voice guide mode. Users rely on TranslateGo for travel, communication, language study, or quick translation tasks.",
+    "size": 70,
+    "reviews": 60000,
+    "ratingAvg": 4.7,
+    "downloads": 1000000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 900 },
+      { "name": "3 star", "count": 3500 },
+      { "name": "4 star", "count": 20000 },
+      { "name": "5 star", "count": 34500 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/wZM1Fkyc/unnamed.png",
+    "title": "MindSpace",
+    "companyName": "ZenPath Studios",
+    "id": 11,
+    "description": "MindSpace is a mental wellness and meditation app designed to help you manage stress, improve focus, and foster mindfulness. You can choose guided meditations, breathing exercises, sleep stories, background soundscapes, and focus sessions. The app tracks your mood, stress levels, and session history so it can recommend tailored practices. It also features quick “mini breath breaks” you can do during a busy day. The interface is soothing and minimal, with calming visuals and ambient audio. Over time, MindSpace nudges you with reminders or micro-practices when stress patterns emerge. The app also offers journaling prompts, gratitude tools, and short cognitive behavioral therapy (CBT) techniques. Many users integrate MindSpace into their daily ritual to maintain mental clarity, emotional balance, and restful sleep.",
+    "size": 60,
+    "reviews": 47000,
+    "ratingAvg": 4.6,
+    "downloads": 650000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 2500 },
+      { "name": "4 star", "count": 14000 },
+      { "name": "5 star", "count": 26000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/TMrg05zJ/images-3.jpg",
+    "title": "WalletGuard",
+    "companyName": "SecureFin",
+    "id": 12,
+    "description": "WalletGuard is a personal finance & budgeting app designed to help you track income, expenses, savings, and investments. Connect your bank accounts, credit cards, and digital wallets securely (read-only). The app automatically categorizes transactions, flags unusual spending, and provides visual reports and trends. You can set budgets, savings goals, alerts, and recurring bills. WalletGuard also supports manual entry, cash transactions, and envelope budgeting. Insights show where you overspend, suggest cuts, and forecast end-of-month balances. You can plan for large purchases, track net worth, and export data for tax or further analysis. Security features include PIN/fingerprint lock, encryption, and anonymized data. Many users adopt WalletGuard to get control over their finances, reduce overspending, and build healthy saving habits.",
+    "size": 55,
+    "reviews": 39000,
+    "ratingAvg": 4.5,
+    "downloads": 550000,
+    "ratings": [
+      { "name": "1 star", "count": 250 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 2200 },
+      { "name": "4 star", "count": 12000 },
+      { "name": "5 star", "count": 21500 }
+    ]
+  },
+  {
+  "image": "https://i.ibb.co.com/gbL7zy91/images-4.jpg",
+  "title": "Facebook",
+  "companyName": "Meta Platforms, Inc.",
+  "id": 13,
+  "description": "Facebook is a social networking app that lets you connect with friends, family, and communities around the world. You can share photos, videos, and updates, join groups, create events, and follow pages that interest you. The app also provides a marketplace to buy and sell locally, live video streaming, stories, and reels for short-form content. It includes robust privacy and security settings, along with personalized feeds powered by AI. Facebook integrates seamlessly with Messenger and other Meta apps for chatting and media sharing.",
+  "size": 120,
+  "reviews": 112000000,
+  "ratingAvg": 4.3,
+  "downloads": 5000000000,
+  "ratings": [
+    { "name": "1 star", "count": 2500000 },
+    { "name": "2 star", "count": 3200000 },
+    { "name": "3 star", "count": 6800000 },
+    { "name": "4 star", "count": 25000000 },
+    { "name": "5 star", "count": 75000000 }
+  ]
+}
+,
+  {
+    "image": "https://i.ibb.co.com/d0Q1sTFD/unnamed-1.png",
+    "title": "LanguageLab",
+    "companyName": "Polyglot Systems",
+    "id": 14,
+    "description": "LanguageLab is a language learning app that blends interactive lessons, conversation practice, flashcards, and games to help you learn new languages. It supports reading, writing, listening, and speaking. The app uses spaced repetition for vocabulary, adaptive quizzes, and AI-driven chatbots to simulate conversation. You can practice pronunciation with voice recognition feedback. The lessons are bite-sized (5–10 minutes) but cumulative. You can pick from beginner, intermediate, or advanced levels. The app offers grammar explanations, cultural notes, and theme modules (e.g. travel, business, daily life). Over time, LanguageLab suggests review content and tracks your fluency progression. Many users use it daily to accumulate consistent progress, bridge study with practical speaking, and stay motivated with streaks and goals.",
+    "size": 85,
+    "reviews": 33000,
+    "ratingAvg": 4.6,
+    "downloads": 500000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 1800 },
+      { "name": "4 star", "count": 8000 },
+      { "name": "5 star", "count": 23700 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/6cgjS9b7/images-1.png",
+    "title": "RecipeBox",
+    "companyName": "CulinaryTech",
+    "id": 15,
+    "description": "RecipeBox is a culinary app that gives you access to thousands of recipes, cooking guides, ingredient lists, meal plans, and shopping lists. You can browse recipes by cuisine, difficulty, ingredients on hand, or dietary preferences (vegan, gluten-free, keto, etc.). Each recipe shows step-by-step instructions, photos, timer tools, video guides, and portion resizing. The app can generate shopping lists from chosen recipes and let you check off items as you shop. You can save favorite recipes, add your own, rate and comment, and share with friends. RecipeBox also offers weekly meal planner templates, nutritional summaries, pantry tracking, and seasonal suggestions. Over time, the app starts recommending recipes based on your taste history. Many users rely on RecipeBox to diversify their meals, plan cooking schedules, and simplify grocery shopping.",
+    "size": 95,
+    "reviews": 29000,
+    "ratingAvg": 4.5,
+    "downloads": 400000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 2000 },
+      { "name": "4 star", "count": 10500 },
+      { "name": "5 star", "count": 16900 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/LdV9zV6g/1200x600wa.png",
+    "title": "FitMeal",
+    "companyName": "NutriSync",
+    "id": 16,
+    "description": "FitMeal is a diet and nutrition tracker that helps you log meals, track macros and micronutrients, set goals, and get insights about your eating patterns. You can search foods, scan barcodes, or input ingredients manually. The app splits your daily intake into proteins, carbs, fats, fiber, vitamins, and minerals. You can set target calorie and macronutrient goals, and FitMeal gives you real-time feedback as you eat. It also provides meal suggestions, recipe ideas, and food logs. The app includes hydration tracking, reminders, and integration with fitness trackers to adjust caloric needs. You can view daily, weekly, and monthly summaries, and the app highlights trends (e.g. protein deficiency, high sugar). Many use FitMeal to support weight goals, nutrition awareness, or dietary balance.",
+    "size": 60,
+    "reviews": 32000,
+    "ratingAvg": 4.6,
+    "downloads": 450000,
+    "ratings": [
+      { "name": "1 star", "count": 220 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 1600 },
+      { "name": "4 star", "count": 9000 },
+      { "name": "5 star", "count": 21680 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/zVYKQSgy/images-2.png",
+    "title": "QuickTranslate",
+    "companyName": "LinguaFast",
+    "id": 17,
+    "description": "QuickTranslate is a lightweight translation tool for quick, everyday translation tasks. Speak, type, or snap photos of text and get fast translations. It supports voice, text, and camera (OCR) translation modes. The app has a minimal UI, ideal for on-the-fly use like signs, menus, conversations, or short phrases. It supports over 80 languages and includes offline packs for common languages. Save favorite phrases or translations for quick access. The app also offers alternate suggestions and context hints. Many users keep QuickTranslate on hand during travel, dining, or simple cross-language chat.",
+    "size": 45,
+    "reviews": 21000,
+    "ratingAvg": 4.5,
+    "downloads": 300000,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 1000 },
+      { "name": "4 star", "count": 5500 },
+      { "name": "5 star", "count": 14050 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/yBpKqqvr/unnamed-2.png",
+    "title": "HabitLoop",
+    "companyName": "WellMind Labs",
+    "id": 18,
+    "description": "HabitLoop is a habit-forming and behavior tracker app that helps you build positive routines and break bad ones. You define habits, set frequencies (daily, weekly), reminder times, streaks, and difficulty levels. The app visualizes your progress, success rates, and trends. You can schedule habit chains (one habit triggers another) and get motivational nudges. The app also includes insight analytics: when you skip, patterns that correlate with failures, and suggestions to adjust. HabitLoop offers community challenges, habit sharing, and accountability features. Many use it to build morning routines, reading, exercise, learning, or other daily rituals.",
+    "size": 30,
+    "reviews": 26000,
+    "ratingAvg": 4.4,
+    "downloads": 350000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 1000 },
+      { "name": "4 star", "count": 7000 },
+      { "name": "5 star", "count": 17000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/nt1cP8t/images-5.jpg",
+    "title": "SleepEase",
+    "companyName": "DreamWave Technologies",
+    "id": 19,
+    "description": "SleepEase is designed to improve your sleep quality through personalized soundscapes, sleep tracking, smart alarm, breathing exercises, and sleep coaching. You can choose ambient sounds, white noise, guided sleep meditations, or binaural beats. The app records sleep cycles (deep, REM, light) using motion and sound sensors, then gives you a nightly report. A smart alarm wakes you in a light sleep window near your desired time. Breathing exercises help you wind down. Over time, SleepEase detects patterns (e.g. wake? times) and offers suggestions to adjust your routine environment, screen habits, or bedtime. Many users adopt SleepEase to reduce insomnia, increase restful sleep, and wake more refreshed.",
+    "size": 55,
+    "reviews": 29000,
+    "ratingAvg": 4.6,
+    "downloads": 400000,
+    "ratings": [
+      { "name": "1 star", "count": 250 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 1800 },
+      { "name": "4 star", "count": 9000 },
+      { "name": "5 star", "count": 18550 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/RpgLxnQ1/booknook-icon-filled-256.png",
+    "title": "BookNook",
+    "companyName": "LitConnect",
+    "id": 20,
+    "description": "BookNook is a reading and library app that helps you track your reading, discover new books, and connect with fellow readers. You can log books, mark pages, add notes, rate, and share quotes. The app offers recommendations based on your reading history, genre preferences, and ratings. It also includes book clubs, discussion threads, and challenges. You can link to e-book stores or library catalogs to borrow or purchase. The interface supports day/night themes, font adjustments, and reading timers. Over time, BookNook refines recommendations, surfaces hidden gems, and encourages you to develop reading habits. Many use it to organize reading lists, track progress, and stay engaged with literature communities.",
+    "size": 70,
+    "reviews": 22000,
+    "ratingAvg": 4.5,
+    "downloads": 300000,
+    "ratings": [
+      { "name": "1 star", "count": 180 },
+      { "name": "2 star", "count": 260 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 6200 },
+      { "name": "5 star", "count": 16560 }
+    ]
+  }

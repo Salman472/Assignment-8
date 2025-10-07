@@ -1,0 +1,68 @@
+import React from "react";
+import { Link, Links } from "react-router";
+import LogoImg from '../assets/logo.png'
+const Navbar = () => {
+  return (
+    <div className="bg-base-100 shadow-sm">
+      <div className="navbar w-11/12 mx-auto py-5">
+        <div className="navbar-start">
+          <div className="dropdown">
+            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                {" "}
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />{" "}
+              </svg>
+            </div>
+            <ul
+              tabIndex={0}
+              className="menu  menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow space-y-3 font-medium"
+            >
+              <Link to="/">
+                <li>Home</li>
+              </Link>
+              <Link to="/apps">
+                <li>Apps</li>
+              </Link>
+              <Link to="/installation">
+                <li>Installation</li>
+              </Link>
+            </ul>
+          </div>
+          <div className="flex items-center gap-3">
+            <img className="h-10 w-10" src={LogoImg} alt="" />
+            <Link to='/' className="font-bold  text-xl text-li bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent  ">CRIEATIVE APPS.IO</Link>
+          </div>
+        </div>
+        <div className="navbar-center hidden lg:flex">
+          <ul className="menu menu-horizontal px-1 font-medium">
+            <Link to="/" >
+              <li className="ml-4 ">Home</li>
+            </Link>
+            <Link to="/apps">
+              <li className="ml-4">Apps</li>
+            </Link>
+            <Link to="/installation">
+              <li className="ml-4">Installation</li>
+            </Link>
+          </ul>
+        </div>
+        <div className="navbar-end">
+          <button className="btn py-3"><img className="h-8 w-8" src="https://i.ibb.co.com/F4dM6B7K/Github-desktop-logo-symbol-svg.png" alt="" /> Contribute</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Navbar;
