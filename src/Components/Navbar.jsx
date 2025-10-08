@@ -47,14 +47,16 @@ const Navbar = () => {
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 font-medium space-x-5 text-xl ">
-              <NavLink  className={linkStyle} to="/"> <li >Home</li></NavLink> 
-             <NavLink  className={linkStyle} to="/apps"> <li >Apps</li></NavLink> 
-             <NavLink  className={linkStyle} to="/installation"> <li >Installation</li></NavLink>
+              <NavLink  className={linkStyle} to="/"> <li className=" hover:scale-105 transition-all duration-500 ease-in-out">Home</li></NavLink> 
+             <NavLink  className={linkStyle} to="/apps"> <li className=" hover:scale-105 transition-all duration-500 ease-in-out">Apps</li></NavLink> 
+             <NavLink  className={linkStyle} to="/installation"> <li className=" hover:scale-105 transition-all duration-500 ease-in-out">Installation</li></NavLink>
             
           </ul>
         </div>
         <div className="navbar-end">
-          <Link to='https://github.com/' target="blank"  className="btn py-3 bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white"><img className="h-8 w-8" src="https://i.ibb.co.com/F4dM6B7K/Github-desktop-logo-symbol-svg.png" alt="" /> Contribute</Link>
+          <Link to='https://github.com/' target="blank"  className="btn py-3 bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white hover:scale-105 transition-all duration-500 ease-in-out"><img className="h-8 w-8" src="https://i.ibb.co.com/F4dM6B7K/Github-desktop-logo-symbol-svg.png" alt="" /> Contribute</Link>
+
+          
         </div>
       </div>
     </div>

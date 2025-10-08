@@ -13,19 +13,8 @@ const AppDetails = () => {
  
   const { id } = useParams();
   const [ins, setIns] = useState(false);
-  const install = () => {
-    setIns(true);
-    toast.success("Install Successful!", {
-      position: "top-center",
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: false,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "dark",
-    });
-  };
+  
+  
 
   // console.log(id);
   const singleApp = app.find((app) => app.id === Number(id));
@@ -35,9 +24,33 @@ const AppDetails = () => {
   // console.log(singleApp.ratings);
   const rating=singleApp.ratings
   const reverseRating=[...rating].reverse()
-  console.log(reverseRating);
+  // console.log(reverseRating);
   
-
+const install = () => {
+    const existingData=JSON.parse(localStorage.getItem("installed"))
+    let updateData=[]
+    if(existingData){
+      const isDuplicate=existingData.some(a=>a.id===singleApp.id)
+      if(isDuplicate){return}
+      updateData=[...existingData,singleApp]
+    }else{
+      updateData.push(singleApp)
+    }
+     localStorage.setItem('installed', JSON.stringify(updateData))
+   
+    setIns(true);
+    toast.success(`Yaheo 🔰 !! ${singleApp.title} Installed Successfully`, {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: false,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+    });
+    
+  };
   // rechart data
 //   const data = [
 //   {
@@ -122,7 +135,7 @@ const AppDetails = () => {
           </div>
           <button
             onClick={install}
-            className="btn py-4 px-5 mt-4 bg-[#00D390]  font-semibold text-white"
+            className="btn py-4 px-5 mt-4 bg-[#00D390]  font-semibold text-white shadow-lg hover:scale-105 transition-all duration-500 ease-in-out"
           >
             {ins ? "installed" : `Install Now (${singleApp?.size} MB) (&)`}
           </button>
