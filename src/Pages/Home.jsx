@@ -1,10 +1,20 @@
 import React from 'react';
 import Phone from '../assets/hero.png'
+import useApps from '../Hooks/useApps';
+import App from '../Components/App';
+import { NavLink } from 'react-router';
+
+
+
+
 
 const Home = () => {
+   const [app,error,Loading]=useApps()
+   console.log(app);
+   const sliceApp=app.slice(0,8)
     return (
         <div>
-           <div className='text-center mt-20 space-y-2 w-11/12 mx-auto'>
+          <div className='text-center mt-20 space-y-2 w-11/12 mx-auto'>
             <h1 className='text-7xl font-bold'>We Build</h1>
             <h2 className='text-7xl font-bold'><span className='font-black bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent'>Productive</span> Apps</h2>
             <p className='text-[#627382] text-xl font-normal w-8/12 mx-auto'>At CREATIVE APPS.IO , we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
@@ -36,6 +46,23 @@ const Home = () => {
                         <p>31 more will Launch</p>
                     </div>
                 </div>
+           </div>
+
+
+           <div>
+            <div className='text-center mt-20 mb-10 space-y-4'>
+                <h1 className='text-5xl text-[#001931] font-bold'>Trending Apps</h1>
+                <p className='text-xl text-[#627382] '>Explore All Trending Apps on the Market developed by us</p>
+            </div>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 w-11/12 mx-auto'>
+                {
+                    sliceApp.map(app=><App app={app} key={app.id}/>)
+                }
+            </div>
+
+           </div>
+           <div className='text-center mt-10 mb-20'>
+            <NavLink to='/apps' className='bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white font-semibold py-4 px-20 rounded-sm shadow-lg'>Show All</NavLink>
            </div>
         </div>
     );

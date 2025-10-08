@@ -1,15 +1,17 @@
 import { createBrowserRouter } from "react-router";
 import RootLayout from "../Root/RootLayout";
-import Home from "../Pages/Home";
+
 import Apps from "../Pages/Apps";
 import Installation from "../Pages/Installation";
+import Home from "../Pages/Home";
+import AppDetails from "../Components/AppDetails";
 
 
 const router=createBrowserRouter([
     {
         path:'/',
-        Component:RootLayout,
-        HydrateFallback:<h1>Loading....</h1>,
+        element:<RootLayout/>,
+        hydrateFallbackElement:<h1>Loading....</h1>,
         children:[
             {
                 index:true,
@@ -23,6 +25,10 @@ const router=createBrowserRouter([
             {
                 path:'/installation',
                 element:<Installation/>
+            },
+            {
+                path:'/app-details/:id',
+                element:<AppDetails/>
             }
         ]
     }

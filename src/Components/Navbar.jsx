@@ -1,7 +1,13 @@
 import React from "react";
-import { Link, Links } from "react-router";
+import { Link, NavLink } from "react-router";
 import LogoImg from '../assets/logo.png'
 const Navbar = () => {
+  const linkStyle = ({ isActive }) =>
+    isActive
+      ? "text-[#632EE3] border-b-2 border-[#632EE3] pb-1 transition-all easy-in-out duration-300"
+      : " hover:text-[#632EE3] pb-1 transition-all easy-in-out duration-300";
+  
+
   return (
     <div className="bg-base-100 shadow-sm">
       <div className="navbar w-11/12 mx-auto py-5">
@@ -26,17 +32,11 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu  menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow space-y-3 font-medium"
+              className="menu  menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow space-y-3 font-medium text-xl"
             >
-              <Link to="/">
-                <li>Home</li>
-              </Link>
-              <Link to="/apps">
-                <li>Apps</li>
-              </Link>
-              <Link to="/installation">
-                <li>Installation</li>
-              </Link>
+             <NavLink  className={linkStyle} to="/"> <li className="ml-5">Home</li></NavLink> 
+             <NavLink  className={linkStyle} to="/apps"> <li className="ml-5">Apps</li></NavLink> 
+             <NavLink  className={linkStyle} to="/installation"> <li className="ml-5">Installation</li></NavLink> 
             </ul>
           </div>
           <div className="flex items-center gap-3">
@@ -45,20 +45,15 @@ const Navbar = () => {
           </div>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 font-medium">
-            <Link to="/" >
-              <li className="ml-4 ">Home</li>
-            </Link>
-            <Link to="/apps">
-              <li className="ml-4">Apps</li>
-            </Link>
-            <Link to="/installation">
-              <li className="ml-4">Installation</li>
-            </Link>
+          <ul className="menu menu-horizontal px-1 font-medium space-x-5 text-xl font-medium">
+             <NavLink  className={linkStyle} to="/"> <li >Home</li></NavLink> 
+             <NavLink  className={linkStyle} to="/apps"> <li >Apps</li></NavLink> 
+             <NavLink  className={linkStyle} to="/installation"> <li >Installation</li></NavLink> 
+            
           </ul>
         </div>
         <div className="navbar-end">
-          <button className="btn py-3 bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white"><img className="h-8 w-8" src="https://i.ibb.co.com/F4dM6B7K/Github-desktop-logo-symbol-svg.png" alt="" /> Contribute</button>
+          <button  className="btn py-3 bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white"><img className="h-8 w-8" src="https://i.ibb.co.com/F4dM6B7K/Github-desktop-logo-symbol-svg.png" alt="" /> Contribute</button>
         </div>
       </div>
     </div>
