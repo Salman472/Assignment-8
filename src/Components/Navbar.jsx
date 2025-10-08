@@ -54,7 +54,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <button  className="btn py-3 bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white"><img className="h-8 w-8" src="https://i.ibb.co.com/F4dM6B7K/Github-desktop-logo-symbol-svg.png" alt="" /> Contribute</button>
+          <Link to='https://github.com/' target="blank"  className="btn py-3 bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white"><img className="h-8 w-8" src="https://i.ibb.co.com/F4dM6B7K/Github-desktop-logo-symbol-svg.png" alt="" /> Contribute</Link>
         </div>
       </div>
     </div>
