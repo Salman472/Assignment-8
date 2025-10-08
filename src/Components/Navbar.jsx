@@ -4,8 +4,9 @@ import LogoImg from '../assets/logo.png'
 const Navbar = () => {
   const linkStyle = ({ isActive }) =>
     isActive
-      ? "text-[#632EE3] border-b-2 border-[#632EE3] pb-1 transition-all easy-in-out duration-300"
+      ? "text-[#632EE3] lg:border-b-2 lg:border-[#632EE3] pb-1 transition-all easy-in-out duration-300 bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white lg:bg-none lg:text-[#632EE3]"
       : " hover:text-[#632EE3] pb-1 transition-all easy-in-out duration-300";
+  
   
 
   return (
@@ -45,10 +46,10 @@ const Navbar = () => {
           </div>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 font-medium space-x-5 text-xl font-medium">
-             <NavLink  className={linkStyle} to="/"> <li >Home</li></NavLink> 
+          <ul className="menu menu-horizontal px-1 font-medium space-x-5 text-xl ">
+              <NavLink  className={linkStyle} to="/"> <li >Home</li></NavLink> 
              <NavLink  className={linkStyle} to="/apps"> <li >Apps</li></NavLink> 
-             <NavLink  className={linkStyle} to="/installation"> <li >Installation</li></NavLink> 
+             <NavLink  className={linkStyle} to="/installation"> <li >Installation</li></NavLink>
             
           </ul>
         </div>
