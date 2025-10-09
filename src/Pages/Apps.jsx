@@ -9,10 +9,7 @@ const Apps = () => {
   const [appFound,setAppFound]=useState('')
   const trem=appFound.trim().toLowerCase()
   const foundApp=trem?app.filter(a=>a.title.toLowerCase().includes(trem)):app
-//   console.log(foundApp);
-//  const navigation=useNavigation()
-//  console.log(navigation.state);
-//   console.log(app);
+
   return (
     <div className="w-11/12 mx-auto">
       <div className="mt-20 text-center space-y-4">

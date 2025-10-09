@@ -6,13 +6,14 @@ import star from "../assets/icon-ratings.png";
 import review from "../assets/icon-review.png";
 import AppNotFound from "./AppNotFound";
 import { useState } from "react";
-import { toast, ToastContainer } from "react-toastify";
+import {  ToastContainer } from "react-toastify";
 import Img from '../assets/logo.png'
 import { Area, Bar, CartesianGrid, ComposedChart, Legend, Line, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 import { MoveLeft, MoveRight } from "lucide-react";
+import Swal from "sweetalert2";
 const AppDetails = () => {
   const [app,err,loading] = useApps();
- console.log(loading);
+//  console.log(loading);
   const { id } = useParams();
   const [ins, setIns] = useState(false);
   
@@ -46,16 +47,21 @@ const updatedApps = [...installedApps, singleApp];
     setIns(true);
 
 
- toast.success(`Yaheo 🔰 !! ${singleApp.title} Installed Successfully`, {
-      position: "top-right",
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: false,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "dark",
-    });
+Swal.fire({
+  title: `Yaheo 🔰 !! ${singleApp.title} Installed Successfully`,
+  icon: "success",
+  draggable: true
+});
+//  toast.success(`Yaheo 🔰 !! ${singleApp.title} Installed Successfully`, {
+//       position: "top-right",
+//       autoClose: 5000,
+//       hideProgressBar: false,
+//       closeOnClick: false,
+//       pauseOnHover: true,
+//       draggable: true,
+//       progress: undefined,
+//       theme: "dark",
+//     });
 
     const existingData=JSON.parse(localStorage.getItem("installed"))
     let updateData=[]

@@ -6,7 +6,7 @@ import { Link, NavLink } from "react-router";
 
 const Home = () => {
   const [app, loading] = useApps();
-  console.log(loading);
+  // console.log(loading);
   const sliceApp = app.slice(0, 8);
   return (
     <div>

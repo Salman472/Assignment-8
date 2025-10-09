@@ -3,6 +3,7 @@ import download from "../assets/icon-downloads.png";
 import rating from "../assets/icon-ratings.png";
 import { toast, ToastContainer } from "react-toastify";
 import NotInstall from "../Components/NotInstall";
+import Swal from "sweetalert2";
 const Installation = () => {
   const [save, setSave] = useState([]);
   const [sortOrder, setSortOrder] = useState("none");
@@ -18,16 +19,22 @@ const Installation = () => {
   setSave(updatedList);
   localStorage.setItem("installed", JSON.stringify(updatedList));
 
-  toast.error(" App Uninstall Successfully!", {
-    position: "top-right",
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: false,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "dark",
-  });
+    Swal.fire({
+  title: "App Uninstall Successfully!",
+  icon: "success",
+  draggable: true
+});
+
+  // toast.error(" App Uninstall Successfully!", {
+  //   position: "top-right",
+  //     autoClose: 5000,
+  //     hideProgressBar: false,
+  //     closeOnClick: false,
+  //     pauseOnHover: true,
+  //     draggable: true,
+  //     progress: undefined,
+  //     theme: "dark",
+  // });
 };
 
   const sortItem = (() => {
