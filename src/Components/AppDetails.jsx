@@ -1,5 +1,5 @@
-import React from "react";
-import { useParams } from "react-router";
+import React, { useEffect } from "react";
+import { Link, useParams } from "react-router";
 import useApps from "../Hooks/useApps";
 import download from "../assets/icon-downloads.png";
 import star from "../assets/icon-ratings.png";
@@ -7,19 +7,26 @@ import review from "../assets/icon-review.png";
 import AppNotFound from "./AppNotFound";
 import { useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
+import Img from '../assets/logo.png'
 import { Area, Bar, CartesianGrid, ComposedChart, Legend, Line, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+import { MoveLeft, MoveRight } from "lucide-react";
 const AppDetails = () => {
-  const [app] = useApps();
- 
+  const [app,err,loading] = useApps();
+ console.log(loading);
   const { id } = useParams();
   const [ins, setIns] = useState(false);
   
-  
 
-  // console.log(id);
+ useEffect(() => {
+    const installedApps = JSON.parse(localStorage.getItem("installed")) || [];
+    const isInstalled = installedApps.some(ap => ap.id === app.id);
+    setIns(isInstalled);
+  }, [app]);
+
   const singleApp = app.find((app) => app.id === Number(id));
   if (!singleApp) {
-    return <AppNotFound />;
+    
+    return loading?<h1 className="min-h-[calc(100vh-305px)] flex justify-center items-center gap-3 font-bold text-2xl md:text-5xl lg:text-7xl text-li bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent "><img className="h-20 w-20" src={Img} alt="" /> CREATIVE APPS.IO</h1>:<AppNotFound />;
   }
   // console.log(singleApp.ratings);
   const rating=singleApp.ratings
@@ -27,6 +34,29 @@ const AppDetails = () => {
   // console.log(reverseRating);
   
 const install = () => {
+  const installedApps = JSON.parse(localStorage.getItem("installed")) || [];
+   const alreadyInstalled = installedApps.some(app => app.id === singleApp.id);
+ if (alreadyInstalled) {
+      alert("Already installed!");
+      return;
+    }
+const updatedApps = [...installedApps, singleApp];
+    localStorage.setItem("installed", JSON.stringify(updatedApps));
+
+    setIns(true);
+
+
+ toast.success(`Yaheo 🔰 !! ${singleApp.title} Installed Successfully`, {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: false,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+    });
+
     const existingData=JSON.parse(localStorage.getItem("installed"))
     let updateData=[]
     if(existingData){
@@ -38,60 +68,19 @@ const install = () => {
     }
      localStorage.setItem('installed', JSON.stringify(updateData))
    
-    setIns(true);
-    toast.success(`Yaheo 🔰 !! ${singleApp.title} Installed Successfully`, {
-      position: "top-right",
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: false,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "dark",
-    });
+    
+   
     
   };
-  // rechart data
-//   const data = [
-//   {
-//     name: '5 Star',
-  
-//     pv: 800,
-    
-//   },
-//   {
-//     name: '4 Star',
-    
-//     pv: 967,
-    
-//   },
-//   {
-//     name: '3 Star',
-    
-//     pv: 1098,
-  
-//   },
-//   {
-//     name: '2 Star',
-   
-//     pv: 1200,
-    
-//   },
-//   {
-//     name: '1 Star',
-   
-//     pv: 1108,
-   
-//   },
-  
-// ];
-
+ 
 
   return (
+    
     <div className="w-11/12 mx-auto  mt-20">
-      {/* {!singleApp?(<h1>Loading...</h1>):
-            (singleApp.title)
-            } */}
+      <div className="mb-5 -mt-15 lg:hidden flex justify-between items-center " >
+        <Link to='/apps' className="btn shadow-lg bg-white"><MoveLeft/></Link>
+        <Link to='/installation' className="btn  shadow-lg bg-white"><MoveRight/></Link>
+      </div>
       <div className=" flex flex-col md:flex-row gap-10 border-b-2 border-gray-300 pb-10">
         <div>
           <img
@@ -135,9 +124,11 @@ const install = () => {
           </div>
           <button
             onClick={install}
+            // disabled={}
             className="btn py-4 px-5 mt-4 bg-[#00D390]  font-semibold text-white shadow-lg hover:scale-105 transition-all duration-500 ease-in-out"
           >
-            {ins ? "installed" : `Install Now (${singleApp?.size} MB) (&)`}
+            {ins ? "installed" : `Install Now (${singleApp?.size} MB)`}
+            
           </button>
           <ToastContainer
             position="top-center"

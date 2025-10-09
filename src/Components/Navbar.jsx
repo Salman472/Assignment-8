@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <div className="bg-base-100 shadow-sm">
-      <div className="navbar w-11/12 mx-auto py-5">
+      <div className="navbar md:w-11/12 mx-auto py-5">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -54,7 +54,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <Link to='https://github.com/' target="blank"  className="btn py-3 bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white hover:scale-105 transition-all duration-500 ease-in-out"><img className="h-8 w-8" src="https://i.ibb.co.com/F4dM6B7K/Github-desktop-logo-symbol-svg.png" alt="" /> Contribute</Link>
+          <Link to='https://github.com/' target="blank"  className="btn py-3 bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white hover:scale-105 transition-all duration-500 ease-in-out"><img className="h-8 w-8" src="https://i.ibb.co.com/F4dM6B7K/Github-desktop-logo-symbol-svg.png" alt="" /> <h1 className="hidden sm:block">Contribute</h1></Link>
 
           
         </div>

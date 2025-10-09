@@ -2,14 +2,16 @@ import React, { Suspense, use, useState } from "react";
 import useApps from "../Hooks/useApps";
 import App from "../Components/App";
 import AppNotFound from "../Components/AppNotFound";
+import loadingLogo from '../assets/logo.png'
 
 const Apps = () => {
-  const [app, error, Loading] = useApps();
+  const [app, error, loading] = useApps();
   const [appFound,setAppFound]=useState('')
   const trem=appFound.trim().toLowerCase()
   const foundApp=trem?app.filter(a=>a.title.toLowerCase().includes(trem)):app
 //   console.log(foundApp);
- 
+//  const navigation=useNavigation()
+//  console.log(navigation.state);
 //   console.log(app);
   return (
     <div className="w-11/12 mx-auto">
@@ -43,7 +45,8 @@ const Apps = () => {
           <kbd className="kbd kbd-sm">K</kbd>
         </label>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      {
+        loading?<h1 className="min-h-[calc(100vh-305px)] flex justify-center items-center gap-3 font-bold text-2xl md:text-5xl lg:text-7xl text-li bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent "><img  className="h-20 w-20" src={loadingLogo} alt="" /> CREATIVE APPS.IO</h1>:<><div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         {
             foundApp.length>0 &&foundApp.map((app) => (
           <App key={app.id} app={app} />
@@ -52,7 +55,9 @@ const Apps = () => {
       </div>
       {
         foundApp.length===0 && <AppNotFound/>
+      }</>
       }
+      
     </div>
   );
 };
