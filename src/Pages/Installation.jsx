@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import download from "../assets/icon-downloads.png";
 import rating from "../assets/icon-ratings.png";
-import { toast, ToastContainer } from "react-toastify";
+import {  ToastContainer } from "react-toastify";
 import NotInstall from "../Components/NotInstall";
 import Swal from "sweetalert2";
 const Installation = () => {
@@ -21,20 +21,12 @@ const Installation = () => {
 
     Swal.fire({
   title: "App Uninstall Successfully!",
+  text:'The app Successfully Uninstall for your device',
   icon: "success",
   draggable: true
 });
 
-  // toast.error(" App Uninstall Successfully!", {
-  //   position: "top-right",
-  //     autoClose: 5000,
-  //     hideProgressBar: false,
-  //     closeOnClick: false,
-  //     pauseOnHover: true,
-  //     draggable: true,
-  //     progress: undefined,
-  //     theme: "dark",
-  // });
+
 };
 
   const sortItem = (() => {
@@ -46,9 +38,7 @@ const Installation = () => {
       return save;
     }
   })();
-  // if(sortItem.length===0){
-  //   return <img src="https://i.ibb.co.com/BHvxrMFb/app-not-installed-error-in-android.webp"/>
-  // }
+  
   return (
     <div className="w-11/12 mx-auto">
       <div className="mt-20 mb-10 text-center space-y-4">
@@ -71,7 +61,7 @@ const Installation = () => {
                 value={sortOrder}
                 onChange={(e) => setSortOrder(e.target.value)}
               >
-                <option value="none">Sort by Price</option>
+                <option value="none">Sort by downloads</option>
                 <option value="price-asc">Low-&gt;High</option>
                 <option value="price-des">High-&gt;Low</option>
               </select>

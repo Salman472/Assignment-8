@@ -37,7 +37,7 @@ const Navbar = () => {
             >
              <NavLink  className={linkStyle} to="/"> <li className="ml-5">Home</li></NavLink> 
              <NavLink  className={linkStyle} to="/apps"> <li className="ml-5">Apps</li></NavLink> 
-             <NavLink  className={linkStyle} to="/installation"> <li className="ml-5">Installation</li></NavLink> 
+             <NavLink  className={linkStyle} to="/installation"> <li className="ml-5">My Installation</li></NavLink> 
             </ul>
           </div>
           <div className="flex items-center gap-3">
@@ -49,7 +49,7 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1 font-medium space-x-5 text-xl ">
               <NavLink  className={linkStyle} to="/"> <li className=" hover:scale-105 transition-all duration-500 ease-in-out">Home</li></NavLink> 
              <NavLink  className={linkStyle} to="/apps"> <li className=" hover:scale-105 transition-all duration-500 ease-in-out">Apps</li></NavLink> 
-             <NavLink  className={linkStyle} to="/installation"> <li className=" hover:scale-105 transition-all duration-500 ease-in-out">Installation</li></NavLink>
+             <NavLink  className={linkStyle} to="/installation"> <li className=" hover:scale-105 transition-all duration-500 ease-in-out">My Installation</li></NavLink>
             
           </ul>
         </div>

@@ -25,6 +25,7 @@ const AppDetails = () => {
   }, [app]);
 
   const singleApp = app.find((app) => app.id === Number(id));
+  // console.log(singleApp);
   if (!singleApp) {
     
     return loading?<h1 className="min-h-[calc(100vh-305px)] flex justify-center items-center gap-3 font-bold text-2xl md:text-5xl lg:text-7xl text-li bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent "><img className="h-20 w-20" src={Img} alt="" /> CREATIVE APPS.IO</h1>:<AppNotFound />;
@@ -52,16 +53,6 @@ Swal.fire({
   icon: "success",
   draggable: true
 });
-//  toast.success(`Yaheo 🔰 !! ${singleApp.title} Installed Successfully`, {
-//       position: "top-right",
-//       autoClose: 5000,
-//       hideProgressBar: false,
-//       closeOnClick: false,
-//       pauseOnHover: true,
-//       draggable: true,
-//       progress: undefined,
-//       theme: "dark",
-//     });
 
     const existingData=JSON.parse(localStorage.getItem("installed"))
     let updateData=[]
